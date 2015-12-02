@@ -1,0 +1,17 @@
+{
+  "name": "react-native-android-shared-preferences",
+  "description": "A react native android package to access SharedPreferences.",
+  "version": "0.1.1",
+  "main": "index.android.js",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "android"
+  ],
+  "author": "Atticus White <atticus@robinpowered.com>",
+  "license": "MIT",
+  "homepage": "",
+  "peerDependencies": {
+    "react-native": ">= 0.11.0"
+  }
+}
