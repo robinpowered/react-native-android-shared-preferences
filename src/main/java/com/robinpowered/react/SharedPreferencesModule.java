@@ -1,6 +1,5 @@
 package com.robinpowered.react;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
@@ -11,14 +10,12 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.Promise;
 
 public class SharedPreferencesModule extends ReactContextBaseJavaModule {
-  Activity mActivity = null;
   SharedPreferences preferences;
 
-  public SharedPreferencesModule(ReactApplicationContext reactApplicationContext, Activity activity) {
+  public SharedPreferencesModule(ReactApplicationContext reactApplicationContext) {
     super(reactApplicationContext);
     preferences = reactApplicationContext.getApplicationContext().getSharedPreferences("titanium", Context.MODE_PRIVATE);
     System.out.println("SharedPreferencesModule HAS INITIALIZED");
-    mActivity = activity;
   }
 
   @Override

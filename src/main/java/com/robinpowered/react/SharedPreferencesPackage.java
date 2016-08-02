@@ -1,7 +1,5 @@
 package com.robinpowered.react;
 
-import android.app.Activity;
-
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -14,16 +12,14 @@ import java.util.Collections;
 import java.util.List;
 
 public class SharedPreferencesPackage implements ReactPackage {
-  private Activity mActivity = null;
 
-  public SharedPreferencesPackage(Activity activity) {
-    mActivity = activity;
+  public SharedPreferencesPackage() {
   }
 
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
     List<NativeModule> modules = new ArrayList<NativeModule>();
-    modules.add(new SharedPreferencesModule(reactApplicationContext, mActivity));
+    modules.add(new SharedPreferencesModule(reactApplicationContext));
     return modules;
   }
 
