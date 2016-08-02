@@ -12,10 +12,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class SharedPreferencesPackage implements ReactPackage {
-
-  public SharedPreferencesPackage() {
-  }
-
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
     List<NativeModule> modules = new ArrayList<NativeModule>();
