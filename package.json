@@ -1,7 +1,7 @@
 {
   "name": "react-native-android-shared-preferences",
   "description": "A react native android package to access SharedPreferences.",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "main": "index.android.js",
   "keywords": [
     "react-component",
